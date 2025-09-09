@@ -761,3 +761,148 @@ body{
     /* background-color: violet; */
 }
 
+
+/* === Mobile overrides === */
+@media (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  /* NAV */
+  #nav {
+    height: 8vh;
+    margin-top: 20px;
+    padding: 0 4vw;
+  }
+  #nav h1 {
+    width: 50%;
+    font-size: 24px;
+    justify-content: flex-start;
+  }
+  #nav h1::after,
+  #nav h1::before,
+  #nav h2 {
+    display: none; /* hide the extra text and links */
+  }
+  #nav h3 {
+    display: block; /* hamburger or secondary text */
+  }
+
+  /* VIDEO / HERO */
+  #center {
+    height: auto;
+    padding: 2vw;
+  }
+  #overlay {
+    position: static;
+    padding: 4vw 2vw;
+  }
+  #over1 h1 {
+    font-size: 6vw;
+  }
+  #over1 h2 {
+    font-size: 3vw;
+    padding: 2vw;
+  }
+  #over2 h4 {
+    font-size: 3.5vw;
+  }
+  #over2 img {
+    height: 6vw;
+  }
+
+  /* SCROLLING IMAGES */
+  #scroll {
+    height: 20vh;
+  }
+  #scroll img {
+    height: 60%;
+    width: 20%;
+  }
+
+  /* PAGE 2 columns → stack */
+  #page2 {
+    flex-direction: column;
+    padding: 4vw;
+  }
+  #page2-part1,
+  #page2-part2 {
+    width: 100%;
+  }
+  #page2-part2s2 {
+    flex-direction: column;
+    gap: 2vw;
+  }
+  #page2-part2s2 h3,
+  #page2-part2s2 p {
+    width: 100%;
+    font-size: 3vw;
+  }
+
+  /* PAGE 3 list items */
+  .elem {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2vw;
+    height: auto;
+  }
+  .elem img {
+    display: none; /* hide hover images on mobile */
+  }
+  .elem-part2 h1 {
+    font-size: 5vw;
+  }
+  .elem-part2 h5 {
+    font-size: 3vw;
+  }
+
+  /* MARQUEE */
+  #marque h1 {
+    font-size: 5vw;
+  }
+
+  /* PAGE 4 three columns → stack */
+  #page4 {
+    flex-direction: column;
+    padding: 4vw;
+  }
+  #page4-part1,
+  #page4-part2,
+  #page4-part3 {
+    width: 100%;
+  }
+  #page4-part2 img,
+  #page4-part3 img {
+    height: auto;
+    width: 100%;
+  }
+  #page4-part1 h1 {
+    font-size: 6vh;
+  }
+
+  /* FOOTER */
+  #footer {
+    flex-direction: column;
+    height: auto;
+  }
+  #footer h1 {
+    width: 100%;
+    font-size: 24px;
+  }
+  #footer>h2 {
+    width: 100%;
+    font-size: 18px;
+    border: none;
+  }
+  #footer-part4>h2 {
+    font-size: 4vw;
+  }
+  #footer-contact-social {
+    font-size: 4vw;
+    flex-wrap: wrap;
+  }
+  #footer-contact-copyright h3 {
+    font-size: 3vw;
+  }
+}
+
